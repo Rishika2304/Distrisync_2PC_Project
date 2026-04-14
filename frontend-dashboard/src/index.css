@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #020617;
+  color: white;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  /* Adding a high-end font stack helps the "rich" look */
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.4) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+
+
+h1, h2, h3, button {
+  letter-spacing: -0.02em;
+}
+/* This makes the blue dot actually glow */
+.status-glow {
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+}
+
+/* Custom tracking for that industrial header look */
+.tracking-industrial {
+  letter-spacing: 0.4em;
+}
