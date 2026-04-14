@@ -15,7 +15,7 @@ const razorpay = new Razorpay({
     key_secret: process.env.RAZORPAY_KEY_SECRET 
 });
 
-// --- 🛡️ SECURITY MIDDLEWARE ---
+// --- 🛡️ SECURITY MIDDLEWARE ----
 app.use('/api/2pc', (req, res, next) => {
     if (req.headers['x-service-token'] !== process.env.INTERNAL_SECRET) {
         return res.status(403).json({ error: 'FORBIDDEN_NODE' });
