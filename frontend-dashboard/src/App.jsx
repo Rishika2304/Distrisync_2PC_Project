@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Wallet, Zap, ShieldCheck, Cpu, ArrowRight, BarChart3, Database, Clock } from 'lucide-react';
-
+// minor update for contribution
 const App = () => {
   const CURRENT_USER = "user_1"; 
   const SELLER_ID = "user_2";
@@ -42,6 +42,7 @@ const App = () => {
   }, [activeTab]);
 
   const handleTrade = async () => {
+    // trigger trade logic
     setLoading(true);
     setStatus("INITIATING_2PC_PROTOCOL");
     try {
